@@ -44,8 +44,8 @@ Follow these steps to set up the project locally:
 
 ### Clone the Repository
 
-git clone https://github.com/yourusername/smart-contact-manager.git
-cd smart-contact-manager
+git clone https://github.com/gnsgns6/intellicontact.git
+cd intellicontact
 
 
 ### Configure MySQL
