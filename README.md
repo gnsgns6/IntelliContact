@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.4-brightgreen)
-![Java](https://img.shields.io/badge/Java-11-orange)
+![Java](https://img.shields.io/badge/Java-17-orange)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
 ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.0-green)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-4.5-purple)
