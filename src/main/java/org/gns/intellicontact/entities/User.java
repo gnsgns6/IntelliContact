@@ -2,6 +2,8 @@ package org.gns.intellicontact.entities;
 
 import jakarta.persistence.*;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +13,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    @NotBlank(message = "Name field is required !!")
+    @Size(min=2, max=20, message = "min 2 and max 20 characters are allowed")
     private String name;
     @Column(unique = true)
     private String email;
@@ -98,5 +102,20 @@ public class User {
 
     public void setAbout(String about) {
         this.about = about;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                ", enabled=" + enabled +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", about='" + about + '\'' +
+                ", contacts=" + contacts +
+                '}';
     }
 }
